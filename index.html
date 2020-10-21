@@ -10,14 +10,23 @@
 </head>
 
 <body>
-  <div id="app"></div>
+  <div id="app">
+    <div class="product-section">
+      <div class="product-image">
+        <img src="" />
+      </div>
+      <div class="product-description">
+        <h1>{{ name }}</h1>
+        <span class="price">{{ price }}</span>
+      </div>
+    </div>
 
-  <!-- JS -->
-  <script src="https://unpkg.com/vue@next"></script>
-  <script src="main.js"></script>
-  <script>
-    const mount = app.mount("#app");
-  </script>
+    <!-- JS -->
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="main.js"></script>
+    <script>
+      const mount = app.mount("#app");
+    </script>
 </body>
 
 </html>
