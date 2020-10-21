@@ -17,7 +17,15 @@
       </div>
       <div class="product-description">
         <h1>{{ name }}</h1>
-        <span class="price">{{ price }}</span>
+
+        <p v-if="sale">
+          <span class="sale">{{ price }} € </span>
+          <span class="new-price"> {{ price - 5}} € PROMOTION</span>
+        </p>
+        <p v-else>
+          <span class="price">{{ price }} €</span>
+        </p>
+
       </div>
     </div>
 
