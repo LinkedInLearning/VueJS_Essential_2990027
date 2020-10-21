@@ -4,7 +4,7 @@ const app = Vue.createApp({
       name: "Pizza Royale",
       price: 12,
       image: "assets/images/pizza1-tomate.jpg",
-      sale: false
+      sale: true
     }
   }
 })
