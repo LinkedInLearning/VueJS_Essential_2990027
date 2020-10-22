@@ -52,6 +52,16 @@ input {
   font-weight: bold;
   text-decoration: underline;
 }
+.notActiveBtn {
+  background-color: #f6f6f6;
+  border-color: #f6f6f6;
+  color: gray;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+.notActiveBtn:hover {
+  background-color: #f6f6f6;
+}
 .product-description {
   width: 47%;
 }
