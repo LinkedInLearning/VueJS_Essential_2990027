@@ -6,9 +6,9 @@
   flex-direction: row-reverse;
 }
 body {
-  margin: 0px;
   font-family: "Source Sans Pro";
   font-size: 20px;
+  margin: 0px;
 }
 button {
   background-color: #d0021b;
@@ -33,19 +33,19 @@ button:hover {
   margin-top: 40px;
 }
 h1 {
+  font-family: "Roboto", sans-serif;
   font-size: 50px;
   font-weight: 700;
   margin: 0;
   line-height: 1.1;
-  font-family: "Roboto", sans-serif;
 }
 img {
-  width: 90%;
   padding: 15px;
+  width: 90%;
 }
 input {
-  width: 96%;
   height: 27px;
+  width: 96%;
 }
 .new-price {
   color: #c10a28;
@@ -81,11 +81,13 @@ input {
   text-decoration: line-through;
 }
 .sauces li {
-  padding: 5px 15px;
-  margin: 10px 0px;
-  width: fit-content;
   border-radius: 20px;
+  color: white;
   cursor: pointer;
+  list-style: none;
+  margin: 10px 0px;
+  padding: 5px 15px;
+  width: fit-content;
 }
 .sauces li:hover {
   color: black;

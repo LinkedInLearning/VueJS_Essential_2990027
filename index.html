@@ -77,7 +77,7 @@
         <div class="sauces">
           <strong>Sauces au choix</strong>
           <ul>
-            <li v-for="sauce in sauces" @mouseover="updateImage(sauce.image)">
+            <li v-for="sauce in sauces" @mouseover="updateImage(sauce.image)" :style="{ backgroundColor: sauce.color }">
               {{ sauce.type }}
             </li>
           </ul>
