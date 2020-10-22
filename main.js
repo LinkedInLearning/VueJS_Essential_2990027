@@ -36,6 +36,8 @@ const app = Vue.createApp({
         Proteines: 9.62,
         Sel: 11,
       },
+      totalPrice: 0,
+      nbrProduct: 0,
     }
   }
 })

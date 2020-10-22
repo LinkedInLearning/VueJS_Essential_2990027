@@ -1,10 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
+#app {
+  display: flex;
+  flex-direction: row-reverse;
+}
 body {
   margin: 0px;
   font-family: "Source Sans Pro";
   font-size: 20px;
+}
+button {
+  background-color: #d0021b;
+  border-color: #d0021b;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Oswald", sans-serif !important;
+  line-height: 20px;
+  margin: 20px auto;
+  max-width: initial;
+  min-width: initial;
+  padding: 12px;
+  text-align: center;
+  text-transform: uppercase !important;
+  width: 350px;
+}
+button:hover {
+  background-color: #b6132c;
+}
+.cart {
+  margin-right: 40px;
+  margin-top: 40px;
 }
 h1 {
   font-size: 50px;
@@ -48,4 +74,21 @@ span.price {
 }
 strong {
   font-size: 18px;
+}
+table {
+  border-collapse: collapse;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: right;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+table thead th {
+  text-align: center;
+}
+td {
+  width: 170px;
 }
