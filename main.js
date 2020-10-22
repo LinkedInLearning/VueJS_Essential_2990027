@@ -1,7 +1,8 @@
 const app = Vue.createApp({
   data() {
     return {
-      name: "Pizza Royale",
+      product: "Pizza",
+      type: "Orientale",
       price: 12,
       image: "assets/images/pizza1-tomate.jpg",
       sale: true,
@@ -54,6 +55,12 @@ const app = Vue.createApp({
     },
     updateImage(newLinkImage) {
       this.image = newLinkImage;
-    },
+    }
   },
+
+  computed: {
+    title() {
+      return this.product + " " + this.type;
+    },
+  }
 })

@@ -22,7 +22,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>{{ name }}</td>
+            <td>{{ title }}</td>
             <td>{{ nbrProduct }}</td>
           </tr>
           <tr>
@@ -56,7 +56,7 @@
 
       <!-- Description du produit -->
       <div class="product-description">
-        <h1>{{ name }}</h1>
+        <h1>{{ title }}</h1>
         <p v-show="notAvailable">Momentanément indisponible</p>
 
         <p v-if="sale">
