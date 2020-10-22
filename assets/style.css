@@ -43,6 +43,10 @@ img {
   width: 90%;
   padding: 15px;
 }
+input {
+  width: 96%;
+  height: 27px;
+}
 .new-price {
   color: #c10a28;
   font-weight: bold;
@@ -91,4 +95,7 @@ table thead th {
 }
 td {
   width: 170px;
+}
+td.code-promo {
+  padding: 0;
 }

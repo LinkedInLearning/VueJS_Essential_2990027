@@ -26,8 +26,21 @@
             <td>{{ nbrProduct }}</td>
           </tr>
           <tr>
+            <td>Code Promo</td>
+            <td class="code-promo">
+              <input v-model="promo" placeholder="Ajouter un code promo" />
+            </td>
+          </tr>
+          <tr>
             <td>Total à payer</td>
-            <td>{{ totalPrice }}</td>
+            <td>
+              <div v-if="promo === 'royale' ">
+                (-3€)
+                <span class="sale">{{ totalPrice }} €</span>
+                {{ totalPrice - 3}} €
+              </div>
+              <div v-else>{{ totalPrice }} €</div>
+            </td>
           </tr>
         </tbody>
       </table>
