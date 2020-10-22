@@ -34,12 +34,14 @@
           <tr>
             <td>Total à payer</td>
             <td>
-              <div v-if="promo === 'royale' ">
-                (-3€)
-                <span class="sale">{{ totalPrice }} €</span>
-                {{ totalPrice - 3}} €
-              </div>
-              <div v-else>{{ totalPrice }} €</div>
+              <transition name="bounce">
+                <div v-if="promo === 'royale' ">
+                  (-3€)
+                  <span class="sale">{{ totalPrice }} €</span>
+                  {{ totalPrice - 3}} €
+                </div>
+                <div v-else>{{ totalPrice }} €</div>
+              </transition>
             </td>
           </tr>
         </tbody>
