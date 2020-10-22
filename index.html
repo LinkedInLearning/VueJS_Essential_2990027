@@ -77,7 +77,7 @@
         <div class="sauces">
           <strong>Sauces au choix</strong>
           <ul>
-            <li v-for="sauce in sauces">
+            <li v-for="sauce in sauces" @mouseover="updateImage(sauce.image)">
               {{ sauce.type }}
             </li>
           </ul>
@@ -92,7 +92,7 @@
         </div>
 
         <!-- Bouton d'ajout au panier -->
-        <button @click="nbrProduct += 1; totalPrice = price * nbrProduct">Ajouter à ma commande</button>
+        <button @click="addProduct()">Ajouter à ma commande</button>
         <br /><br />
       </div>
     </div>

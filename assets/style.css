@@ -70,6 +70,16 @@ input {
   margin-right: 5px;
   text-decoration: line-through;
 }
+.sauces li {
+  padding: 5px 15px;
+  margin: 10px 0px;
+  width: fit-content;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.sauces li:hover {
+  color: black;
+}
 span.price {
   color: #c10a28;
   font-family: "Source Sans Pro";

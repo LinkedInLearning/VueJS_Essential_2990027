@@ -4,7 +4,7 @@ const app = Vue.createApp({
       name: "Pizza Royale",
       price: 12,
       image: "assets/images/pizza1-tomate.jpg",
-      sale: false,
+      sale: true,
       notAvailable: true,
       ingredients: [
         "Olives",
@@ -26,7 +26,7 @@ const app = Vue.createApp({
           id: 1002,
           type: "Crème Fraiche",
           color: "#e9cb8f",
-          image: "assets/images/pizza1-creme.jpg.jpg",
+          image: "assets/images/pizza1-creme.jpg",
         },
       ],
       energy: {
@@ -40,5 +40,20 @@ const app = Vue.createApp({
       nbrProduct: 0,
       promo: "",
     }
-  }
+  },
+
+  methods: {
+    addProduct() {
+      if (this.sale) {
+        this.nbrProduct += 1;
+        this.totalPrice += this.price - 5;
+      } else {
+        this.nbrProduct += 1;
+        this.totalPrice += this.price;
+      }
+    },
+    updateImage(newLinkImage) {
+      this.image = newLinkImage;
+    },
+  },
 })
