@@ -1,4 +1,53 @@
 app.component("product", {
+  template:
+    `<!-- Image du produit -->
+    <div class="product-image">
+      <img :src="image" />
+    </div>
+
+    <!-- Description du produit -->
+    <div class="product-description">
+      <h1>{{ title }}</h1>
+      <p v-show="notAvailable">Momentanément indisponible</p>
+
+      <p v-if="sale">
+        <span class="sale">{{ price }} € </span>
+        <span class="new-price"> {{ price - 5}} € PROMOTION</span>
+      </p>
+      <p v-else>
+        <span class="price">{{ price }} €</span>
+      </p>
+
+      <br />
+      <strong>Ingrédients </strong>
+      <div>
+        <span v-for="ingredient in ingredients">{{ ingredient + ", "}}
+        </span>
+      </div>
+      <br />
+      <div class="sauces">
+        <strong>Sauces au choix</strong>
+        <ul>
+          <li v-for="sauce in sauces" @mouseover="updateImage(sauce.image)" :style="{ backgroundColor: sauce.color }">
+            {{ sauce.type }}
+          </li>
+        </ul>
+      </div>
+      <div>
+        <strong>Valeurs nutritionnelles pour 100 grammes</strong>
+        <ul>
+          <li v-for="(value, name) in energy">
+            {{ name }} : {{ value }}
+          </li>
+        </ul>
+      </div>
+
+      <!-- Bouton d'ajout au panier -->
+      <button :class="{ notActiveBtn : notAvailable}" @click="addProduct()" :disabled="notAvailable">
+        Ajouter à ma commande
+      </button>
+      <br /><br />
+    </div>`,
 
   data() {
     return {
@@ -6,8 +55,8 @@ app.component("product", {
       type: "Orientale",
       price: 12,
       image: "assets/images/pizza1-tomate.jpg",
-      sale: true,
-      notAvailable: true,
+      sale: false,
+      notAvailable: false,
       ingredients: [
         "Olives",
         "Poulet roti",
@@ -62,53 +111,5 @@ app.component("product", {
     },
   },
 
-  template:
-    `<!-- Image du produit -->
-    <div class="product-image">
-      <img :src="image" />
-    </div>
 
-    <!-- Description du produit -->
-    <div class="product-description">
-      <h1>{{ title }}</h1>
-      <p v-show="notAvailable">Momentanément indisponible</p>
-
-      <p v-if="sale">
-        <span class="sale">{{ price }} € </span>
-        <span class="new-price"> {{ price - 5}} € PROMOTION</span>
-      </p>
-      <p v-else>
-        <span class="price">{{ price }} €</span>
-      </p>
-
-      <br />
-      <strong>Ingrédients </strong>
-      <div>
-        <span v-for="ingredient in ingredients">{{ ingredient + ", "}}
-        </span>
-      </div>
-      <br />
-      <div class="sauces">
-        <strong>Sauces au choix</strong>
-        <ul>
-          <li v-for="sauce in sauces" @mouseover="updateImage(sauce.image)" :style="{ backgroundColor: sauce.color }">
-            {{ sauce.type }}
-          </li>
-        </ul>
-      </div>
-      <div>
-        <strong>Valeurs nutritionnelles pour 100 grammes</strong>
-        <ul>
-          <li v-for="(value, name) in energy">
-            {{ name }} : {{ value }}
-          </li>
-        </ul>
-      </div>
-
-      <!-- Bouton d'ajout au panier -->
-      <button :class="{ notActiveBtn : notAvailable}" @click="addProduct()" :disabled="notAvailable">
-        Ajouter à ma commande
-      </button>
-      <br /><br />
-    </div>`
 })
