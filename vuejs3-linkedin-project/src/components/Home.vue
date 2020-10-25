@@ -1,12 +1,6 @@
 <template>
   <div id="intro"></div>
-  <div id="product-menu">
-    <Products />
-    <Products />
-    <Products />
-    <Products />
-    <Products />
-  </div>
+  <div id="product-menu"></div>
 </template>
 
 <script>
