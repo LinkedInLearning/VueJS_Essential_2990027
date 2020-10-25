@@ -1,36 +1,22 @@
 <template>
   <nav id="header">
-    <a href="">HOME</a>
-    <a href="">CONTACT</a>
+    <router-link to="/">HOME</router-link>
+    <router-link to="/contact">CONTACT</router-link>
   </nav>
-  <section>
-    <Home>
-      <template v-slot:welcome>
-        <p>Bienvenue !</p>
-      </template>
-
-      <p>PROMOTION SUR LA 4 FROMAGE</p>
-      <p>NOUVEAUTE - PIZZA ROYALE</p>
-      <p>JEU CONCOURS</p>
-    </Home>
-  </section>
+  <router-view />
 </template>
 
 <script>
-import Home from "./components/Home.vue";
-
 export default {
   name: "App",
-  components: {
-    Home
-  },
+
   data() {
     return {};
   }
 };
 </script>
 
-<style scoped>
+<style>
 a {
   background: black;
   color: #ffffff;
