@@ -3,27 +3,12 @@
     <a href="">HOME</a>
     <a href="">CONTACT</a>
   </nav>
-  <section>
-    <Home>
-      <template v-slot:welcome>
-        <p>Bienvenue !</p>
-      </template>
-
-      <p>PROMOTION SUR LA 4 FROMAGE</p>
-      <p>NOUVEAUTE - PIZZA ROYALE</p>
-      <p>JEU CONCOURS</p>
-    </Home>
-  </section>
 </template>
 
 <script>
-import Home from "./components/Home.vue";
-
 export default {
   name: "App",
-  components: {
-    Home
-  },
+
   data() {
     return {};
   }
