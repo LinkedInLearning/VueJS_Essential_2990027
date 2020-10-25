@@ -7,7 +7,9 @@ app.component("product", {
 
     <!-- Description du produit -->
     <div class="product-description">
-      <h1>{{ title }}</h1>
+      <h1>{{ title }}
+      <img v-if="showBestSellerProduct()" class="img-best-seller" src="assets/images/best-seller.png">
+      </h1>
       <p v-show="notAvailable">Momentanément indisponible</p>
 
       <p v-if="sale">
