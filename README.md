@@ -31,7 +31,7 @@ Vous devez suivre les étapes suivantes :
 
 Cela créera un dossier node_modules qui est manquant qui n'est pas dans le code car cela ferait gonfler le fichier ZIP)
 
-2. Pour afficher le serveur de développement. affichez l'application sur localhost: 8080 (ou selon le port affiché dans votre terminal)
+2. Pour afficher le serveur de développement. Exécuter la commande suivante :
 
     ```
     npm run serve
