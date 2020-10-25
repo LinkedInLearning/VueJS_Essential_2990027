@@ -9,10 +9,16 @@ const routes = [
     component: Home
   },
   {
-    path: "/contact",
+    path: "/contactez-nous",
     name: "Contact",
-    component: Contact
+    component: Contact,
+    alias: "/contact"
   }
+  /*,
+  {
+    path: "/contact",
+    redirect: {name: "Contact"}
+  }*/
 ];
 
 const router = createRouter({
