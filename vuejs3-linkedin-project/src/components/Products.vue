@@ -27,7 +27,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 @import url("https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap");
 
 a {
