@@ -1,24 +1,24 @@
 # vuejs3-linkedin-project
 
-## Project setup
+## Configuration du projet
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiler et recharger pour le développement
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compiler et réduire pour la production
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### Lints et corriger les fichiers
 ```
 npm run lint
 ```
 
-### Customize configuration
+### Personnaliser la configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
