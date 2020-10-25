@@ -1,7 +1,9 @@
 <template>
   <div id="intro">
-    <slot name="welcome"></slot>
-    <slot></slot>
+    <p>Bienvenue !</p>
+    <p>PROMOTION SUR LA 4 FROMAGE</p>
+    <p>NOUVEAUTE - PIZZA ROYALE</p>
+    <p>JEU CONCOURS</p>
   </div>
   <div id="product-menu">
     <Products />
