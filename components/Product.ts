@@ -7,7 +7,8 @@ app.component("product", {
 
     <!-- Description du produit -->
     <div class="product-description">
-      <h1>{{ title }}</h1>
+      <h1>{{ title }}
+      <img v-show="showBestSellerImg()" class="img-best-seller" src="assets/images/best-sellerq.png"></h1>
       <p v-show="notAvailable">Momentanément indisponible</p>
 
       <p v-if="sale">
@@ -49,6 +50,11 @@ app.component("product", {
       <br /><br />
     </div>`,
 
+  props: {
+    bestseller: {
+      type: Boolean,
+    },
+  },
   data() {
     return {
       product: "Pizza",
@@ -102,7 +108,14 @@ app.component("product", {
     },
     updateImage(newLinkImage) {
       this.image = newLinkImage;
-    }
+    },
+    showBestSellerImg() {
+      if (this.bestseller) {
+        return true;
+      } else {
+        return false;
+      }
+    },
   },
 
   computed: {

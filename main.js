@@ -4,6 +4,7 @@ const app = Vue.createApp({
       totalPrice: 0,
       nbrProduct: 0,
       promo: "",
+      bestSellerProduct: true
     }
   }
 })
