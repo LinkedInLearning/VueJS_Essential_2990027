@@ -50,7 +50,7 @@
 
     <!-- Section Produit -->
     <div class="product-section">
-      <product :bestseller="bestSellerProduct"></product>
+      <product :bestseller="bestSellerProduct" @add-product="addCart($event)"></product>
     </div>
   </div>
 

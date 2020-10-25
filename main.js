@@ -6,5 +6,12 @@ const app = Vue.createApp({
       promo: "",
       bestSellerProduct: true
     }
-  }
+  },
+
+  methods: {
+    addCart(price) {
+      this.nbrProduct += 1;
+      this.totalPrice = price * this.nbrProduct;
+    },
+  },
 })

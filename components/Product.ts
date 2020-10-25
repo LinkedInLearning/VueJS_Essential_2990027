@@ -8,7 +8,7 @@ app.component("product", {
     <!-- Description du produit -->
     <div class="product-description">
       <h1>{{ title }}
-      <img v-show="showBestSellerImg()" class="img-best-seller" src="assets/images/best-sellerq.png"></h1>
+      <img v-show="showBestSellerImg()" class="img-best-seller" src="assets/images/best-seller.png"></h1>
       <p v-show="notAvailable">Momentanément indisponible</p>
 
       <p v-if="sale">
@@ -99,11 +99,9 @@ app.component("product", {
   methods: {
     addProduct() {
       if (this.sale) {
-        this.nbrProduct += 1;
-        this.totalPrice += this.price - 5;
+        this.$emit("add-product", this.price - 5);
       } else {
-        this.nbrProduct += 1;
-        this.totalPrice += this.price;
+        this.$emit("add-product", this.price);
       }
     },
     updateImage(newLinkImage) {
