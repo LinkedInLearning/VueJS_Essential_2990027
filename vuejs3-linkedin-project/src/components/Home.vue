@@ -25,7 +25,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 #intro {
   background-image: url(../assets/images/pizza-menu.jpg);
   background-position: bottom;

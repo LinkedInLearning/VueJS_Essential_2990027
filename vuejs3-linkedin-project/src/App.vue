@@ -30,7 +30,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 a {
   background: black;
   color: #ffffff;
