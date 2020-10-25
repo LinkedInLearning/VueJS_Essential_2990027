@@ -7,10 +7,6 @@
   </div>
   <div id="product-menu">
     <Products />
-    <Products />
-    <Products />
-    <Products />
-    <Products />
   </div>
 </template>
 
