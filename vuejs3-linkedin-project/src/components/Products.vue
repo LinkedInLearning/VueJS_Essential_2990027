@@ -5,9 +5,7 @@
       <h3>Pizza {{ type }}</h3>
       <p>Prix : {{ price }} €</p>
       <p>{{ ingredients }}</p>
-      <router-link
-        :to="{ name: 'product-details', params: { name: 'un-parametre' } }"
-      >
+      <router-link :to="{ name: 'product-details', params: { name: type } }">
         Commander >>
       </router-link>
     </div>

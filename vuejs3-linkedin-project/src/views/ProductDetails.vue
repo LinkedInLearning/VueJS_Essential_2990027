@@ -46,7 +46,7 @@
       <!-- Description du produit -->
       <div class="product-description">
         <h1>
-          {{ $route.params.name }}
+          {{ title }}
           <img class="img-best-seller" src="../assets/images/best-seller.png" />
         </h1>
         <p v-show="notAvailable">Momentanément indisponible</p>
@@ -105,6 +105,7 @@
 
 <script>
 export default {
+  props: ["name"],
   data() {
     return {
       product: "Pizza",
