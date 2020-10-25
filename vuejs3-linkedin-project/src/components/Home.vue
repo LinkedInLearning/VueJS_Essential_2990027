@@ -1,5 +1,8 @@
 <template>
-  <div id="intro"></div>
+  <div id="intro">
+    <slot name="welcome"></slot>
+    <slot></slot>
+  </div>
   <div id="product-menu">
     <Products />
     <Products />
