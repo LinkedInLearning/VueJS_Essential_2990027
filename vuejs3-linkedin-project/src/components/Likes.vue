@@ -1,29 +1,17 @@
 <template>
   <div id="section-likes">
     <div class="div1">{{ nbrLikes }}</div>
-    <div class="div2" @click="addLikes()">J'aime</div>
-    <div class="div3">{{ info }}</div>
   </div>
 </template>
 
 <script>
-import { ref, computed } from "vue";
+import { ref } from "vue";
 export default {
   name: "Likes",
 
   setup() {
     const nbrLikes = ref(7);
-    const message = ref("aime cette page");
-
-    function addLikes() {
-      nbrLikes.value++;
-    }
-
-    const info = computed(() => {
-      return nbrLikes.value + " " + message.value;
-    });
-
-    return { nbrLikes, addLikes, message, info };
+    return { nbrLikes };
   }
 };
 </script>
