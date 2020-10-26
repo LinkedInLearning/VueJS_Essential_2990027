@@ -6,23 +6,15 @@
   </div>
 </template>
 
+
 <script>
-import { reactive, computed, toRefs } from "vue";
+import useLikes from "../use/use-likes.vue";
 export default {
   name: "Likes",
 
   setup() {
-    const event = reactive({
-      nbrLikes: 7,
-      message: "aime cette page",
-      info: computed(() => {
-        return event.nbrLikes + " " + event.message;
-      })
-    });
-    function addLikes() {
-      event.nbrLikes++;
-    }
-    return { ...toRefs(event), addLikes };
+    const { nbrLikes, addLikes, message, info } = useLikes();
+    return { nbrLikes, addLikes, message, info };
   }
 };
 </script>
