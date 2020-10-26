@@ -1,29 +1,32 @@
 <template>
-  <div id="intro">
-    <p>Bienvenue !</p>
-    <p>PROMOTION SUR LA 4 FROMAGE</p>
-    <p>NOUVEAUTE - PIZZA ROYALE</p>
-    <p>JEU CONCOURS</p>
-  </div>
-  <div id="product-menu">
-    <Products />
-  </div>
+  <section>
+    <div id="intro">
+      <p>PROMOTION SUR LA 4 FROMAGE</p>
+      <p>NOUVEAUTE - PIZZA ROYALE</p>
+      <p>JEU CONCOURS</p>
+      <Likes />
+    </div>
+
+    <div id="product-menu">
+      <Products />
+    </div>
+  </section>
 </template>
 
-<script>
+<script scoped>
+import Likes from "../components/Likes.vue";
 export default {
   name: "Home",
+  components: {
+    Likes
+  },
   data() {
     return {};
-  },
-
-  methods: {},
-
-  computed: {}
+  }
 };
 </script>
 
-<style>
+<style scoped>
 #intro {
   background-image: url(../assets/images/pizza-menu.jpg);
   background-position: bottom;
