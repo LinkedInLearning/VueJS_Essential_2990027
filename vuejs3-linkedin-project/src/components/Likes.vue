@@ -5,13 +5,13 @@
 </template>
 
 <script>
-import { ref } from "vue";
 export default {
   name: "Likes",
 
-  setup() {
-    const nbrLikes = ref(7);
-    return { nbrLikes };
+  data() {
+    return {
+      nbrLikes: 7
+    };
   }
 };
 </script>
