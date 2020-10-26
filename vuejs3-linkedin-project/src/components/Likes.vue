@@ -7,23 +7,22 @@
 </template>
 
 <script>
-import { ref, computed } from "vue";
+import { reactive, computed, toRefs } from "vue";
 export default {
   name: "Likes",
 
   setup() {
-    const nbrLikes = ref(7);
-    const message = ref("aime cette page");
-
-    function addLikes() {
-      nbrLikes.value++;
-    }
-
-    const info = computed(() => {
-      return nbrLikes.value + " " + message.value;
+    const event = reactive({
+      nbrLikes: 7,
+      message: "aime cette page",
+      info: computed(() => {
+        return event.nbrLikes + " " + event.message;
+      })
     });
-
-    return { nbrLikes, addLikes, message, info };
+    function addLikes() {
+      event.nbrLikes++;
+    }
+    return { ...toRefs(event), addLikes };
   }
 };
 </script>
