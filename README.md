@@ -1,6 +1,6 @@
 # L'essentiel de Vue.js 3
 
-Ce dossier Repository est lié au cours l'essentiel de VueJS. Le cours est accessible sur LinkedIn Learning. 
+Ce dossier Repository est lié au cours l'essentiel de Vue.js 3. Le cours est accessible sur LinkedIn Learning. 
 
 
 ### Instructions 
