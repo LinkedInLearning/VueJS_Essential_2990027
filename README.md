@@ -1,6 +1,6 @@
 # L'essentiel de Vue.js 3
 
-Ce dossier Repository est lié au cours l'essentiel de Vue.js 3. Le cours est accessible sur LinkedIn Learning. 
+Ce dossier Repository est lié au cours l'essentiel de Vue.js 3. Le cours est accessible sur [LinkedIn Learning][lil-course-url]. 
 
 
 ### Instructions 
@@ -38,3 +38,5 @@ Cela créera un dossier node_modules qui est manquant qui n'est pas dans le code
     ```
 
 Afin d'affichez l'application sur localhost: 8080 (ou selon le port affiché dans votre terminal)
+
+[lil-course-url]: https://www.linkedin.com/learning/l-essentiel-de-vue-js-3
