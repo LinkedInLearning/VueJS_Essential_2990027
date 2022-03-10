@@ -50,5 +50,5 @@ Retrouvez mes autres formations sur [LinkedIn Learning][lil-URL-trainer].
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 [lil-course-url]: https://www.linkedin.com/learning/l-essentiel-de-vue-js-3
-[lil-thumbnail-url]: https://media-exp1.licdn.com/dms/image/C4D0DAQE8kl689yURcQ/learning-public-crop_675_1200/0/1605012675335?e=1645887600&v=beta&t=9EtVliW-8pKb634Qd-LJpWvol01JqksxgcXv61HACSw
+[lil-thumbnail-url]: https://media-exp1.licdn.com/dms/image/C4D0DAQE8kl689yURcQ/learning-public-crop_675_1200/0/1605012675335?e=1646964000&v=beta&t=2Ik12VN2DFFzKCjrZqQFYltoNlMLsqt2PeWOhtoJjHY
 [lil-URL-trainer]: https://www.linkedin.com/learning/instructors/maheva-dessart
