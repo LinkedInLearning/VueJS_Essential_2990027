@@ -2,7 +2,7 @@
 
 Ce dossier Repository est lié au cours `L'essentiel de Vue.js 3`. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
 
-![L'essentiel de Vue.js 3][lil-thumbnail-url]
+![image](https://media-exp1.licdn.com/dms/image/C4D0DAQE8kl689yURcQ/learning-public-crop_675_1200/0/1605012675335?e=1659618000&v=beta&t=L9OWafnZkTwdu-PVqWKelGfkTeByR-I2rYXN7tTeWAM) 
 
 Si vous souhaitez apporter une solution web moderne à vos applications, découvrez cette formation consacrée à Vue.js. Maheva Dessart, développeuse web et experte en programmation, vous présente ce framework JavaScript populaire utilisé par de nombreuses entreprises telles que Google, Adobe ou Microsoft. Ce cours s'adresse aux développeurs débutants ou de niveau intermédiaire qui ont de bonnes connaissances en HTML, CSS et JavaScript. Vous aborderez un ensemble évolué d'outils qui permet de créer des applications puissantes et performantes, et de vous faire gagner du temps. Ainsi, vous verrez comment développer une application de manière complète et intuitive.
 
@@ -48,7 +48,6 @@ Afin d'affichez l'application sur localhost: 8080 (ou selon le port affiché dan
 
 Retrouvez mes autres formations sur [LinkedIn Learning][lil-URL-trainer].
 
-[0]: # (Replace these placeholder URLs with actual course URLs)
 [lil-course-url]: https://www.linkedin.com/learning/l-essentiel-de-vue-js-3
-[lil-thumbnail-url]: https://media-exp1.licdn.com/dms/image/C4D0DAQE8kl689yURcQ/learning-public-crop_675_1200/0/1605012675335?e=1646964000&v=beta&t=2Ik12VN2DFFzKCjrZqQFYltoNlMLsqt2PeWOhtoJjHY
+[lil-thumbnail-url]: https://media-exp1.licdn.com/dms/image/C4D0DAQE8kl689yURcQ/learning-public-crop_675_1200/0/1605012675335?e=1659618000&v=beta&t=L9OWafnZkTwdu-PVqWKelGfkTeByR-I2rYXN7tTeWAM
 [lil-URL-trainer]: https://www.linkedin.com/learning/instructors/maheva-dessart
