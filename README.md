@@ -49,5 +49,5 @@ Afin d'affichez l'application sur localhost: 8080 (ou selon le port affiché dan
 Retrouvez mes autres formations sur [LinkedIn Learning][lil-URL-trainer].
 
 [lil-course-url]: https://www.linkedin.com/learning/l-essentiel-de-vue-js-3
-[lil-thumbnail-url]: https://media-exp1.licdn.com/dms/image/C4D0DAQE8kl689yURcQ/learning-public-crop_675_1200/0/1605012675335?e=1659618000&v=beta&t=L9OWafnZkTwdu-PVqWKelGfkTeByR-I2rYXN7tTeWAM
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/C4D0DAQE8kl689yURcQ/learning-public-crop_675_1200/0/1605012675335?e=1668157200&v=beta&t=7RoVryTbihqDHL8mpRhkj54t0j5c3fBBa-qyp830WCo
 [lil-URL-trainer]: https://www.linkedin.com/learning/instructors/maheva-dessart
