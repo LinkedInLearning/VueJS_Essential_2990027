@@ -2,7 +2,7 @@
 
 Ce dossier Repository est lié au cours `L'essentiel de Vue.js 3`. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
 
-![image](https://media-exp1.licdn.com/dms/image/C4D0DAQE8kl689yURcQ/learning-public-crop_675_1200/0/1605012675335?e=1659618000&v=beta&t=L9OWafnZkTwdu-PVqWKelGfkTeByR-I2rYXN7tTeWAM) 
+![Nom final de la formation][lil-thumbnail-url][Copy&Past Image from LiL-Buddy] 
 
 Si vous souhaitez apporter une solution web moderne à vos applications, découvrez cette formation consacrée à Vue.js. Maheva Dessart, développeuse web et experte en programmation, vous présente ce framework JavaScript populaire utilisé par de nombreuses entreprises telles que Google, Adobe ou Microsoft. Ce cours s'adresse aux développeurs débutants ou de niveau intermédiaire qui ont de bonnes connaissances en HTML, CSS et JavaScript. Vous aborderez un ensemble évolué d'outils qui permet de créer des applications puissantes et performantes, et de vous faire gagner du temps. Ainsi, vous verrez comment développer une application de manière complète et intuitive.
 
