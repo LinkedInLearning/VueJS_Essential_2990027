@@ -12,10 +12,18 @@
       },
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
-        "linkedinlearning.linkedinlearning-vscode-theme"
+        "linkedinlearning.linkedinlearning-vscode-theme",
+        "octref.vetur",
+        "Vue.volar",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "eamodio.gitlens"
       ]
     }
-  },
+  },  
+  "postCreateCommand": "npm install",
+
+
   // Update welcome text and set terminal prompt to '$ '
   "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc",
   // Pull all branches
